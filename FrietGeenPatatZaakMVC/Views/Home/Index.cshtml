@@ -1,0 +1,66 @@
+﻿@using FrietGeenPatatZaakMVC.View_Model
+@model IEnumerable<ProductViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <!-- Hero section (Bootstrap 5) -->
+    <div class="bg-light p-5 text-center rounded shadow-sm">
+        <h1 class="display-4">Welcome to FrietGeenPatatZaakMVC!</h1>
+        <p class="lead">Explore the best fries and snacks in town.</p>
+        <hr class="my-4">
+        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core" target="_blank">building Web apps with ASP.NET Core</a>.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Shop Now</a>
+    </div>
+
+    <!-- Voeg hier de afbeelding toe -->
+    <div class="text-center">
+        <img src="~/images/frietspeciaaltje.jpg alt="Friet speciaal met mayonaise, ketchup en uitjes">
+    </div>
+
+    <!-- Featured Products or Services Section -->
+    <div class="mt-5">
+        <h2 class="text-center">Our Best-Selling Products</h2>
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="~/images/product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Delicious fries served with special sauce.</p>
+                        <a href="#" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="~/images/product2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Crispy snacks to enjoy any time of the day.</p>
+                        <a href="#" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="~/images/product3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">Tasty sides to complement your meal.</p>
+                        <a href="#" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="mt-5 p-5 bg-primary text-white text-center rounded">
+        <h2>Order Your Fries Online Now!</h2>
+        <p>Fast and delicious delivery right to your doorstep.</p>
+        <a class="btn btn-warning btn-lg" href="#">Order Now</a>
+    </div>
+</div>
